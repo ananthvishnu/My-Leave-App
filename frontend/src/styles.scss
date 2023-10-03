@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    font-family: "Poppins" , sans-serif;
+  }
+
+  
+
+
+//Colors
+$primaryPurple: #006fff;
+$secondaryPurple: #4e9bff;
+$gradiant:linear-gradient(5deg, #006fff, #4e9bff);
+$primaryBlack:#8200ff12;
+$primaryColorDark: #002C6E;
+$primaryColorLight: #3e39ff;
+$secondaryColorDark: #827eff;
+$secondaryColorLight: #b6b4ff;
+$white: #ffffff;
+$whitepurble: #f2e5ff;
+$black: #000000;
+$grey: #7A7A7E;
+$gold: #b7ac7f;
+$fontPoppins: 'Poppins', sans-serif;
+$fontSans: 'sans-serif';
+$raleway: 'Raleway', sans-serif;
+$spectral: 'Spectral', serif;
+
+
+::-webkit-scrollbar { 
+    width: 8px; 
+} 
+
+/* Track */ 
+::-webkit-scrollbar-track { 
+    background: gainsboro; 
+    border-radius: 15px; 
+} 
+
+/* Handle */ 
+::-webkit-scrollbar-thumb { 
+    background:$gradiant; 
+    // box-shadow: 15px 15px 25px #ff0000a4;
+    border-radius: 15px; 
+} 
+
+/* Handle on hover */ 
+::-webkit-scrollbar-thumb:hover { 
+    background: $gradiant; 
+} 
+

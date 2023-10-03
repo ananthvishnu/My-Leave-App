@@ -1,0 +1,216 @@
+<div class="sidebar open">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">rootcode</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+        <i class='bx bx-stopwatch'></i>
+        <span class="links_name">Leaves</span>
+       </a>
+       <span class="tooltip">Leaves</span>
+     </li>
+     <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="links_name">Setting</span>
+      </a>
+      <span class="tooltip">Setting</span>
+    </li>
+     <!-- <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Order</span>
+       </a>
+       <span class="tooltip">Order</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Saved</span>
+       </a>
+       <span class="tooltip">Saved</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span>
+     </li> -->
+     <!-- <li class="profile">
+         <div class="profile-details">
+           <img src="profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Prem Shahi</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li> -->
+     <div class="bottom-btn text-center">
+      <div class="apply-btn">
+        <button class="btn-lg apy-btn mb-3"  data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Leave  &rarr;</button>
+      </div>
+      <a href="">Get Help</a>
+    </div>
+
+
+    </ul>
+  </div>
+  <section class="home-section">
+    <app-user-card></app-user-card>
+    <app-leave-allocation></app-leave-allocation>
+    <app-leave-table></app-leave-table>
+  </section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Apply Leave</h1>
+        <div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <h4 class=" heading">Leave Allocation</h4>
+
+        <div class="row p-0">
+          <div class="col ">
+            <div class="card-counter hover-card">
+                <div class="row d-flex">
+                    <div class="col-sm-9 leave-typ">Casual Leaves</div>
+                      <div class="col-sm-3 text-end">
+                        <img src="../../../assets/images/R (1).png" alt="" width="20px" height="20px">
+                      </div>
+                </div>
+
+                <div class="row d-flex">
+                  <div class="col-sm-5">
+                    <span class="count-numbers">2<span class="sub" width="1" height="1">/7</span></span> 
+                    <span class="count-name">Available</span>
+                  </div>
+                  <div class="col-sm-7 text-end">
+                      <button class="btn apply-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Apply  &rarr;</button>
+                  </div>
+                </div>
+               
+              </div>  
+            </div>
+          <div class="col">
+            <div class="card-counter hover-card">
+                <div class="row d-flex">
+                    <div class="col-sm-9 leave-typ">Anual Leaves</div>
+                      <div class="col-sm-3 text-end">
+                        <img src="../../../assets/images/coconut-tree.png" alt="">
+                      </div>
+                </div>
+                <div class="row d-flex">
+                  <div class="col-sm-5">
+                    <span class="count-numbers">2<span class="sub" width="1" height="1">/7</span></span> 
+                    <span class="count-name">Available</span>
+                  </div>
+                  <div class="col-sm-7 text-end">
+                      <button class="btn apply-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Apply  &rarr;</button>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          <div class="col">
+            <div class="card-counter hover-card">
+                <div class="row d-flex">
+                    <div class="col-sm-10 leave-typ">Medical Leaves</div>
+                      <div class="col-sm-2 text-end">
+                        <img src="../../../assets/images/medical.png" alt="" height="20px" width="20px">
+                      </div>
+                </div> 
+                <div class="row d-flex">
+                  <div class="col-sm-5">
+                    <span class="count-numbers">2<span class="sub" width="1" height="1">/7</span></span> 
+                    <span class="count-name">Available</span>
+                  </div>
+                  <div class="col-sm-7 text-end">
+                      <button class="btn apply-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Apply  &rarr;</button>
+                  </div>
+                </div>
+              </div> 
+         </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card-counter hover-card">
+                    <div class="row d-flex">
+                        <div class="col-sm-9 leave-typ">Academic Leaves</div>
+                          <div class="col-sm-3 text-end">
+                            <img src="../../../assets/images/graduation-hat.png" alt="">
+                          </div>
+                    </div> 
+                    <div class="row d-flex">
+                      <div class="col-sm-5">
+                        <span class="count-numbers">2<span class="sub" width="1" height="1">/7</span></span> 
+                        <span class="count-name">Available</span>
+                      </div>
+                      <div class="col-sm-7 text-end">
+                          <button class="btn apply-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Apply  &rarr;</button>
+                      </div>
+                    </div>
+                  </div>  
+                    </div>
+            <div class="col">
+                <div class="card-counter hover-card">
+                    <div class="row d-flex">
+                        <div class="col-sm-9 leave-typ">Custom Leaves</div>
+                          <div class="col-sm-3 text-end">
+                            <img src="../../../assets/images/hand.png" alt="">
+                          </div>
+                    </div>
+                    <div class="row d-flex">
+                      <div class="col-sm-5">
+                        <span class="count-numbers">2<span class="sub" width="1" height="1">/7</span></span> 
+                        <span class="count-name">Available</span>
+                      </div>
+                      <div class="col-sm-7 text-end">
+                          <button class="btn apply-btn2" data-bs-toggle="modal" data-bs-target="#exampleModal2">Apply  &rarr;</button>
+                      </div>
+                    </div>
+                  </div>        
+                 </div>
+          </div>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-closee" data-bs-dismiss="modal">Close &nbsp;<span class="btn-close"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<app-leave-applymodel></app-leave-applymodel>

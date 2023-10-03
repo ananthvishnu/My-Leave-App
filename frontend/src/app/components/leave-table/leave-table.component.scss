@@ -1,0 +1,118 @@
+.heading{
+  font-weight: 700;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+
+  thead th {
+    padding: 8px ; 
+    text-align: left;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
+  }
+
+.leave-container {
+  background-color: #f4f4f7;
+  border-radius: 10px;
+}
+
+.main-row div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.main-row div .filter {
+  padding: 0;
+  margin-right: 48px;
+}
+
+.main {
+  padding: 10px;
+}
+
+span {
+  background-color: #ffff;
+  border-radius: 20px;
+  color: black;
+}
+
+.status {
+  background-color: #ffff;
+  border-radius: 20px;
+  color: black;
+  padding: 3px 10px 3px 10px;
+}
+
+th {
+  padding: 20px;
+  margin-left: 15px;
+  width: 200px;
+}
+
+tr {
+  padding: 20px;
+}
+
+td {
+  padding: 20px;
+  margin-left: 15px;
+}
+
+/* Active page css */
+.pagination .page-item.active .page-link {
+  background-color: transparent !important;
+  border-color: #c083fa !important;
+  color: #000;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Inactive page css */
+.pagination .page-item:not(.active) .page-link {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: #212529;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.pagination {
+  padding: 10px;
+}
+
+.btn-filter {
+  border: none;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.pending {
+  background-color: transparent;
+  border: 2px solid yellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.approved {
+  background-color: green;
+}
+
+.denied {
+  background-color: red;
+}
