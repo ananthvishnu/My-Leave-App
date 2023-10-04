@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  selector: 'app-admin-sidebar',
+  templateUrl: './admin-sidebar.component.html',
+  styleUrls: ['./admin-sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class AdminSidebarComponent implements OnInit {
   ngOnInit(): void {
     let sidebar:any = document.querySelector(".sidebar");
     let closeBtn:any = document.querySelector("#btn");

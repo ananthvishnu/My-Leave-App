@@ -14,6 +14,9 @@ import { LeaveApplymodelComponent } from './components/leave-applymodel/leave-ap
 import { LeaveConformmodelComponent } from './components/leave-conformmodel/leave-conformmodel.component';
 import { LeaveTypemodelComponent } from './leave-typemodel/leave-typemodel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
+import { AdminCardComponent } from './admin/admin-card/admin-card.component';
+import { LineGraphComponent } from './admin/line-graph/line-graph.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LeaveApplymodelComponent,
     LeaveConformmodelComponent,
     LeaveTypemodelComponent,
+    AdminSidebarComponent,
+    AdminCardComponent,
+    LineGraphComponent
   ],
   imports: [
     BrowserModule,
