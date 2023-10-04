@@ -17,6 +17,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 import { AdminCardComponent } from './admin/admin-card/admin-card.component';
 import { LineGraphComponent } from './admin/line-graph/line-graph.component';
+import { TestComponent } from './admin/test/test.component';
+import { PermissionCardComponent } from './admin/permission-card/permission-card.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LineGraphComponent } from './admin/line-graph/line-graph.component';
     LeaveTypemodelComponent,
     AdminSidebarComponent,
     AdminCardComponent,
-    LineGraphComponent
+    LineGraphComponent,
+    TestComponent,
+    PermissionCardComponent
   ],
   imports: [
     BrowserModule,
