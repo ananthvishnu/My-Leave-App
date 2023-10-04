@@ -12,6 +12,8 @@ import { LeaveAllocationComponent } from './components/leave-allocation/leave-al
 import { LeaveTableComponent } from './components/leave-table/leave-table.component';
 import { LeaveApplymodelComponent } from './components/leave-applymodel/leave-applymodel.component';
 import { LeaveConformmodelComponent } from './components/leave-conformmodel/leave-conformmodel.component';
+import { LeaveTypemodelComponent } from './leave-typemodel/leave-typemodel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { LeaveConformmodelComponent } from './components/leave-conformmodel/leav
     LeaveTableComponent,
     LeaveApplymodelComponent,
     LeaveConformmodelComponent,
+    LeaveTypemodelComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

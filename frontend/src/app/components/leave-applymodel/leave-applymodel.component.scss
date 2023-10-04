@@ -1,0 +1,108 @@
+//model css
+.modal-content {
+  width: 168%;
+  top: 15px;
+  right: 171px;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-closee {
+  width: 100%;
+  background-color: #f4f4f7;
+  border-radius: 40px;
+  height: 60px;
+}
+
+.btn-close {
+  background-color: #f4f4f7;
+  border-radius: 20px;
+}
+
+#exampleModal {
+  backdrop-filter: blur(3px) !important;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn-close{
+    margin-right: 10px;
+    background-color: #f4f4f7;
+    padding: 10px;
+    border-radius: 50%;
+
+  }
+
+  .btn-closer {
+    padding: 15px 35px 15px 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f4f4f7;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+}
+
+.btn-add{
+    padding: 15px 35px 15px 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: #C083FA;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+}
+
+  .modal-title{
+    font-weight: 900;
+  }
+
+  #exampleModal2{
+    backdrop-filter: blur(1px);
+  }
+
+  .form-control{
+    background-color: #f4f4f7;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .btn-close1 {
+    margin-right: 10px;
+    color: black;
+    padding: 5px;
+    margin-right: 5px;
+  }
+
+  .calender{
+    background-color: #f4f4f7;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px
+  }
+
+  .leave-data{
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+
+  .datepicker {
+    border-left: 1px solid gray;
+    height: 100%;
+    width: 0;
+}
+
+.col-md-1{
+  width: 0 !important;
+  border-right:1px solid black
+}
+
+.modal-footer{
+  border: none !important;
+}

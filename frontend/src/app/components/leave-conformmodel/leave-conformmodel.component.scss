@@ -1,0 +1,72 @@
+h3{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+.modal-content{
+    width: 168%;
+    top: 129px;
+    right: 171px;
+    height: auto;
+    border: none;
+  }
+  
+
+  #exampleModal3{
+    backdrop-filter: blur(1px);
+  }
+
+
+.btn-close{
+    margin-right: 10px;
+    background-color: #f4f4f7;
+    padding: 10px;
+    border-radius: 50%;
+    
+  }
+
+  .btn-closer {
+    padding: 15px 35px 15px 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f4f4f7;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+}
+
+.btn-add{
+    padding: 15px 35px 15px 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: #C083FA;
+    color: black;
+    width: 100%;
+    font-weight: 500;
+}
+  
+  .modal-title{
+    font-weight: 900;
+  }
+
+
+
+
+.leave-summery-type {
+    padding: 10px;
+}
+
+span {
+    background-color: #f4f4f7;
+    border-radius: 20px;
+    color: black;
+    padding: 3px 10px 3px 10px;
+  }
+
+  .modal-footer{
+    border: none !important;
+  }
