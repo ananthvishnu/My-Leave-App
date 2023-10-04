@@ -1,10 +1,10 @@
-<div class="container mt-3">
+<div class="container">
   <div class="row main">
     <div class="col-12">
-      <h3 class="heading">Leave requests</h3>
+      <h4 class="heading">Leave requests</h4>
       <div class="leave-container">
         <div class="row main-row">
-          <div>
+          <div class="fill-sort">
             <select
               [(ngModel)]="selectedType"
               style="border: none; background: transparent"
@@ -26,9 +26,9 @@
           <!-- Table headers -->
           <thead>
             <tr>
-              <th>DURATION</th>
-              <th>TYPE</th>
-              <th>STATUS</th>
+              <th class="text-start">DURATION</th>
+              <th class="text-center">TYPE</th>
+              <th class="text-end">STATUS</th>
             </tr>
           </thead>
 
@@ -43,10 +43,10 @@
               "
             >
               <td>{{ item.duration }} <span class="status">{{item.dueday}}</span></td>
-              <td>
+              <td class="text-center">
                 <span class="status"> <img src="{{ item.src }}" alt="img-leav" width="16" height="16" /> {{ item.type }}</span>
               </td>
-              <td>
+              <td class="text-end">
                 <span class="status">
                   <span
                     class="status-indicator"
@@ -68,7 +68,7 @@
         <!-- pagination added-->
 
         <nav aria-label="Page navigation">
-          <ul class="pagination">
+          <ul class="pagination m-0">
             <li class="page-item" [class.disabled]="currentPage === 1">
               <a class="page-link" (click)="prevPage()" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
