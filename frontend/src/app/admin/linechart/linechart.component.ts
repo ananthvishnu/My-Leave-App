@@ -52,7 +52,9 @@ export class LinechartComponent implements AfterViewInit {
           name: 'Amount',
           data,
           color:'red'
+          
         },
+        
       ],
     } as any);
   }
