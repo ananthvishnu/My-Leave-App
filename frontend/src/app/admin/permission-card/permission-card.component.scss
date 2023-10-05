@@ -1,7 +1,7 @@
-.container {
-  width: 80%;
-}
 
+.card-containe{
+    padding: 10px 92px 0px 94px;
+}
 .permission-icon{
     align-items: flex-end;
     justify-content: flex-end;
@@ -16,7 +16,7 @@
 .participate_img img {
   border-radius: 50%;
   margin-bottom: 17px;
-  background-color: #016fff1c;
+  height: 95px;
 }
 
 .btn-participate {
@@ -31,4 +31,9 @@ h5 {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+}
+.add-btn{
+    background-color:#f4f4f7 ;
+    color: black;
+    border: none;
 }

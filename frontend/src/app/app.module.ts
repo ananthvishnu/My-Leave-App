@@ -19,6 +19,8 @@ import { AdminCardComponent } from './admin/admin-card/admin-card.component';
 import { LineGraphComponent } from './admin/line-graph/line-graph.component';
 import { TestComponent } from './admin/test/test.component';
 import { PermissionCardComponent } from './admin/permission-card/permission-card.component';
+import { BarchartComponent } from './admin/barchart/barchart.component';
+import { LinechartComponent } from './admin/linechart/linechart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PermissionCardComponent } from './admin/permission-card/permission-card
     AdminCardComponent,
     LineGraphComponent,
     TestComponent,
-    PermissionCardComponent
+    PermissionCardComponent,
+    BarchartComponent,
+    LinechartComponent
   ],
   imports: [
     BrowserModule,
