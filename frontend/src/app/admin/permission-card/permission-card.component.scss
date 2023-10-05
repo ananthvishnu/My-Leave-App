@@ -1,7 +1,28 @@
-.card {
-    height: 200px;
-    background-color: red;
-}
 .container {
-    width: 85%; /* You can adjust the percentage as needed */
+  width: 80%;
+}
+
+.participate-card {
+  padding: 30px;
+  border-radius: 18px;
+  background-color:#f4f4f7;
+}
+
+.participate_img img {
+  border-radius: 50%;
+  margin-bottom: 17px;
+  background-color: #016fff1c;
+}
+
+.btn-participate {
+  border: none;
+  border-radius: 40px;
+  color: black;
+  margin-top: 5px;
+  background-color: white;
+  font-size: 14px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 500;
 }

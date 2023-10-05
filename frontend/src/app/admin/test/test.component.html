@@ -1,68 +1,21 @@
 <div class="container">
-    <div class="col-md-9">
-      <div class="row">
-        <div class="col">
-          <div>
-            <h1>chart</h1>
-           <!-- <canvasjs-chart [options]="chartOptions" [styles]="{width: '470px', height:'253px',fontSize:'18px', fontWeight:200, paddingTop:'10px', background:'#f4f4f7'}"></canvasjs-chart> -->
-            </div>
-        </div>
-        <div class="col">
-          <div class="row member-row">
-            <div class="row">
-              <h3 class="member-heading">
-                Current avilability <span>12th november</span>
-              </h3>
-            </div>
-            <div class="row">
-              <h4>COMPANY</h4>
-              <div class="num">
-                <h2>
-                  45<span class="num-span online">online</span> 12
-                  <span class="num-span away">Away</span>
-                </h2>
+  <div class="row text-center">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let participates of participate">
+          <div class="participate-card">
+              <div class="participate_img">
+                  <img src="{{participates.participateImg}}" alt="participate_img" class="img-fluid">
               </div>
-            </div>
-            <div class="bottom-border"></div>
-            <div class="row team-row">
-              <h4 class="member-heading">TEAM <span> Team: Design team</span></h4>
-              <div class="num parent">
-  
-                <h2>
-                  45<span class="num-span online ">online</span>
-                  <h1 class="">
-                      <img class="child child-1" src="../../../assets/woman.png" alt="" />
-                      <img class="child child-2"
-                        src="../../../assets/woman.png"
-                        alt=""
-                      />
-                      <img class="child child-3" src="../../../assets/woman.png" alt="" />
-                      <img class="child child-4"
-                        src="../../../assets/woman.png"
-                        alt=""
-                      />
-                      <span class="num-span away child child-5 ">4 members away</span>
-                  </h1>
-                  
-                </h2>
+                  <!-- <div class="log-participate">
+                      <img  src="{{participates.logo}}" alt="logo_participate" width="50px" height="50px">
+                  </div> -->
+           
+              <h5 class="mb-0">{{participates.name}}</h5>
+              <span class="text-muted">{{participates.contant}}</span>
+              <div class="row">
+                  <button class="btn btn-participate">{{participates.btn}}</button>
               </div>
-            </div>
+             
           </div>
-        </div>
       </div>
-
-
-      
-      <div class="row">
-        <div class="col">
-          <div>
-            <h1>chart</h1>
-            <!-- <canvasjs-chart
-              [options]="chartOptions1"
-              [styles]="{ width: '970px', height: '253px', paddingTop:'10px', }"
-            ></canvasjs-chart> -->
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
