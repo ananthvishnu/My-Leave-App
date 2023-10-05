@@ -1,0 +1,120 @@
+//model css
+.hand-emoj img {
+  position: absolute;
+  left: 19px;
+  top: 13px;
+}
+
+#exampleModal5 {
+  backdrop-filter: blur(4px) !important;
+  background-color: transparent;
+}
+
+#exampleModalLabel {
+  font-weight: 800;
+}
+.modal-content {
+  width: 95%;
+  top: 181px;
+  right: -44px;
+  border-radius: 25px;
+}
+
+.changed-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: 500;
+}
+.name-span {
+  width: 74px;
+  background-color: #f4f4f7;
+  border-radius: 62px;
+  height: 30px;
+}
+
+.date-span {
+  background-color: #f4f4f7;
+  width: 136px;
+  height: 30px;
+  border-radius: 30px;
+}
+.div {
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn-close {
+  position: absolute;
+  right: 27px;
+  top: 21px;
+  background-color: #f4f4f7;
+  border-radius: 20px;
+}
+.btn-savechanges {
+  width: 100%;
+  background-color: #a3c9b6;
+  border-radius: 40px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.modal-header {
+  padding: 41px 107px 14px 16px;
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
+.date-cap {
+  height: 37px;
+  width: 115px;
+  background-color: #f4f4f7;
+  border-radius: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.admin-start {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.admin-start-date {
+  margin-top: 20px;
+}
+
+.admin-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.label {
+  font-weight: 600;
+  font-size: 14px;
+}
+#dropdownField {
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #f4f4f7;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+span img {
+  margin-bottom: 5px;
+}
+.modal-footer {
+  padding: 19px 3px 2px 3px;
+  border: none;
+}
