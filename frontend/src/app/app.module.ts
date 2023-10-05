@@ -12,7 +12,7 @@ import { LeaveAllocationComponent } from './components/leave-allocation/leave-al
 import { LeaveTableComponent } from './components/leave-table/leave-table.component';
 import { LeaveApplymodelComponent } from './components/leave-applymodel/leave-applymodel.component';
 import { LeaveConformmodelComponent } from './components/leave-conformmodel/leave-conformmodel.component';
-import { LeaveTypemodelComponent } from './leave-typemodel/leave-typemodel.component';
+import { LeaveTypemodelComponent } from './components/leave-typemodel/leave-typemodel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 import { AdminCardComponent } from './admin/admin-card/admin-card.component';
@@ -21,6 +21,8 @@ import { TestComponent } from './admin/test/test.component';
 import { PermissionCardComponent } from './admin/permission-card/permission-card.component';
 import { BarchartComponent } from './admin/barchart/barchart.component';
 import { LinechartComponent } from './admin/linechart/linechart.component';
+import { RoleChangeModalComponent } from './admin/role-change-modal/role-change-modal.component';
+import { RoleChangeSuccessComponent } from './admin/role-change-success/role-change-success.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { LinechartComponent } from './admin/linechart/linechart.component';
     TestComponent,
     PermissionCardComponent,
     BarchartComponent,
-    LinechartComponent
+    LinechartComponent,
+    RoleChangeModalComponent,
+    RoleChangeSuccessComponent
   ],
   imports: [
     BrowserModule,
