@@ -2,10 +2,16 @@
   width: 80%;
 }
 
+.permission-icon{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .participate-card {
-  padding: 30px;
-  border-radius: 18px;
-  background-color:#f4f4f7;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: #f4f4f7;
+    height: 262px;
 }
 
 .participate_img img {
@@ -25,4 +31,5 @@
 h5 {
   font-size: 14px;
   font-weight: 500;
+  text-align: center;
 }
