@@ -1,109 +1,229 @@
-//model css
 .modal-content {
-    width: 168%;
-    top: 15px;
-    right: 171px;
-    border-radius: 22px;
-    border: none;
-  }
+  height: 648px;
+  max-height: 100vh;
+  border: none;
+  border-radius: 20px;
+}
+.leave-owner {
+  font-weight: 600;
+}
+.btn-add {
+  padding: 15px 35px 15px 35px;
+  border: none;
+  border-radius: 40px;
+  background-color: #c083fa;
+  color: black;
+  width: 100%;
+  font-weight: 500;
+}
+
+.modal-title {
+  font-weight: 900;
+}
+
+#exampleModal6 {
+  backdrop-filter: blur(4px);
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+//new css
+
+h3 {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.row.main-row {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-team {
+  width: 100%;
+  height: 121px;
+  background: #f4f4f7;
+  border: 1px solid rgba(103, 101, 101, 0.587);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.modal-dialog {
+  margin-left: auto;
+}
+
+.modal-header {
+  border-bottom: 2px solid #80808036;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 8px;
+  padding-left: 0;
+  padding-bottom: 8;
+}
+
+.btn-close {
+  margin-left: 10px;
+  background-color: #e5e4e7;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.btn-closer {
+  padding: 15px 35px 15px 35px;
+  border: none;
+  border-radius: 40px;
+  background-color: #fee3e3;
+  color: black;
+  width: 100%;
+  font-weight: 500;
+}
+
+.btn-add {
+  padding: 15px 35px 15px 35px;
+  border: none;
+  border-radius: 40px;
+  background-color: #63a5fc;
+  color: black;
+  width: 100%;
+  font-weight: 500;
+}
+
+.modal-title {
+  font-weight: 900;
+}
+
+.form-control {
+  background-color: #f4f4f7;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.btn-close1 {
+  margin-right: 10px;
+  color: black;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.calender {
+  background-color: #f4f4f7;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  font-weight: 500;
   
-  .btn-closee {
-    width: 100%;
-    background-color: #f4f4f7;
-    border-radius: 40px;
-    height: 60px;
-  }
-  
-  .btn-close {
-    background-color: #f4f4f7;
-    border-radius: 20px;
-  }
-  
-  #exampleModal {
-    backdrop-filter: blur(3px) !important;
-  }
-  
-  h3 {
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .btn-close{
-      margin-right: 10px;
-      background-color: #f4f4f7;
-      padding: 10px;
-      border-radius: 50%;
-  
-    }
-  
-    .btn-closer {
-      padding: 15px 35px 15px 35px;
-      border: none;
-      border-radius: 40px;
-      background-color: #f4f4f7;
-      color: black;
-      width: 100%;
-      font-weight: 500;
-  }
-  
-  .btn-add{
-      padding: 15px 35px 15px 35px;
-      border: none;
-      border-radius: 40px;
-      background-color: #C083FA;
-      color: black;
-      width: 100%;
-      font-weight: 500;
-  }
-  
-    .modal-title{
-      font-weight: 900;
-    }
-  
-    #exampleModal2{
-      backdrop-filter: blur(1px);
-    }
-  
-    .form-control{
-      background-color: #f4f4f7;
-      border: none;
-      border-radius: 10px;
-      font-size: 14px;
-      margin-bottom: 5px;
-      margin-left: 10px;
-    }
-  
-    .btn-close1 {
-      margin-right: 10px;
-      color: black;
-      padding: 5px;
-      margin-right: 5px;
-    }
-  
-    .calender{
-      background-color: #f4f4f7;
-      border-radius: 20px;
-      padding: 5px 10px 5px 10px
-    }
-  
-    .leave-data{
-      font-size: 14px;
-      padding-bottom: 15px;
-    }
-  
-    .datepicker {
-      border-left: 1px solid gray;
-      height: 100%;
-      width: 0;
-  }
-  
-  .col-md-1{
-    width: 0 !important;
-    border-right:1px solid black
-  }
-  
-  .modal-footer{
-    border: none !important;
-  }
-  
+}
+.calendar-active{
+  background-color: #c8e0ff;
+  color: #398ffe;
+}
+
+.calender1 {
+  background-color: #ffff;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.leave-summery-type {
+  font-size: 14px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.row.leave-remaning {
+  padding: 10px 4px 12px 14px;
+}
+
+
+select#dropdownField {
+  border: none;
+  border-radius: 16px;
+  padding: 5px 10px 5px 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal-footer {
+  border: none !important;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+.team-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leavs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 5px;
+  margin-left: -4px;
+}
+
+.leavs span {
+  font-size: 15px;
+}
+
+.flotting-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flotting-img img {
+  height: 30px;
+  width: 30px;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+}
+
+.child-1 {
+  left: 15px;
+  top: 0px;
+}
+
+.child-2 {
+  left: 35px;
+  top: 0px;
+}
+
+.child-3 {
+  left: 50px;
+  top: 0px;
+}
+
+.child-4 {
+  left: 70px;
+  top: 0px;
+}
+
+.child-5 {
+  left: 93px;
+  top: 2px;
+  font-size: 11px;
+  background-color: #fee3e3;
+  font-weight: 500;
+  color: darkred;
+}
+
+.parent {
+  position: relative;
+}
