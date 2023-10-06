@@ -26,6 +26,7 @@
             <!-- Table headers -->
             <thead>
               <tr>
+                <th class="text-start">NAME</th>
                 <th class="text-start">DURATION</th>
                 <th class="text-center">TYPE</th>
                 <th class="text-end">STATUS</th>
@@ -33,15 +34,9 @@
             </thead>
   
             <tbody>
-              <!-- Use *ngFor to loop through data based on current page and itemsPerPage -->
-              <tr
-                *ngFor="
-                  let item of data.slice(
-                    (currentPage - 1) * itemsPerPage,
-                    currentPage * itemsPerPage
-                  )
-                "
-              >
+              <!-- Use *ngFor to loop through data based on current page and itemsPerPage  -->
+              <tr class="table-row" data-bs-toggle="modal" data-bs-target="#exampleModal6"  *ngFor=" let item of data.slice((currentPage - 1) * itemsPerPage,currentPage * itemsPerPage )">
+                <td><span><img src={{item.empImg}} alt="emloyee-img" width="30" height="30"> &nbsp; <span>{{item.empName}}</span></span></td>
                 <td>{{ item.duration }} <span class="status">{{item.dueday}}</span></td>
                 <td class="text-center">
                   <span class="status"> <img src="{{ item.src }}" alt="img-leav" width="16" height="16" /> {{ item.type }}</span>
