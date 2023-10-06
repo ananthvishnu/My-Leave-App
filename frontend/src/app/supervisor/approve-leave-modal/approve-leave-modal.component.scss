@@ -3,19 +3,12 @@
   max-height: 100vh;
   border: none;
   border-radius: 20px;
+  top: 86px;
 }
 .leave-owner {
   font-weight: 600;
 }
-.btn-add {
-  padding: 15px 35px 15px 35px;
-  border: none;
-  border-radius: 40px;
-  background-color: #c083fa;
-  color: black;
-  width: 100%;
-  font-weight: 500;
-}
+
 
 .modal-title {
   font-weight: 900;
@@ -62,11 +55,7 @@ p {
 
 .modal-header {
   border-bottom: 2px solid #80808036;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-right: 8px;
-  padding-left: 0;
-  padding-bottom: 8;
+ padding: 24px 28px 17px 17p;
 }
 
 .btn-close {
@@ -90,7 +79,7 @@ p {
   padding: 15px 35px 15px 35px;
   border: none;
   border-radius: 40px;
-  background-color: #63a5fc;
+  background-color: #4ac3f7;
   color: black;
   width: 100%;
   font-weight: 500;

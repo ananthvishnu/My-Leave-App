@@ -19,6 +19,7 @@ h3 {
   max-height: 100vh;
   border: none;
   border-radius: 25px;
+  top: 67px;
 }
 
 .modal-header {
@@ -51,7 +52,7 @@ h3 {
   padding: 15px 35px 15px 35px;
   border: none;
   border-radius: 40px;
-  background-color: #61a5fa;
+  background-color: #4ac3f7;
   color: black;
   width: 100%;
   font-weight: 500;
@@ -79,6 +80,9 @@ span {
   color: #7d7a81;
   font-size: 13px;
   padding: 3px 10px 3px 10px;
+}
+.process-logo{
+  background-color:#4ac3f7;
 }
 .modal-footer {
   border: none !important;
