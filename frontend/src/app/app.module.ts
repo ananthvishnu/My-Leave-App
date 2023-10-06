@@ -23,6 +23,12 @@ import { BarchartComponent } from './admin/barchart/barchart.component';
 import { LinechartComponent } from './admin/linechart/linechart.component';
 import { RoleChangeModalComponent } from './admin/role-change-modal/role-change-modal.component';
 import { RoleChangeSuccessComponent } from './admin/role-change-success/role-change-success.component';
+import { SupervisorSidebarComponent } from './supervisor/supervisor-sidebar/supervisor-sidebar.component';
+import { SupervisorCardComponent } from './supervisor/supervisor-card/supervisor-card.component';
+import { SupervisorTableComponent } from './supervisor/supervisor-table/supervisor-table.component';
+import { SupervisorAvailabilityTableComponent } from './supervisor/supervisor-availability-table/supervisor-availability-table.component';
+import { ApproveLeaveModalComponent } from './supervisor/approve-leave-modal/approve-leave-modal.component';
+import { LeaveRequestApprovedModalComponent } from './supervisor/leave-request-approved-modal/leave-request-approved-modal.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,13 @@ import { RoleChangeSuccessComponent } from './admin/role-change-success/role-cha
     BarchartComponent,
     LinechartComponent,
     RoleChangeModalComponent,
-    RoleChangeSuccessComponent
+    RoleChangeSuccessComponent,
+    SupervisorSidebarComponent,
+    SupervisorCardComponent,
+    SupervisorTableComponent,
+    SupervisorAvailabilityTableComponent,
+    ApproveLeaveModalComponent,
+    LeaveRequestApprovedModalComponent
   ],
   imports: [
     BrowserModule,

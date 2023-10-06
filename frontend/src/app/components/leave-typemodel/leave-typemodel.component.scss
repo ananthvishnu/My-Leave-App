@@ -1,108 +1,103 @@
 //model css
-.modal-content{
-    width: 130%;
-    top: 83px;
-    right: 63px;
-     border-radius: 25px;
-  }
+.modal-content {
+  width: 130%;
+  top: 141px;
+  right: 76px;
+  border-radius: 25px;
+}
+#exampleModalLabel {
+  font-weight: 800;
+}
+
+.heading{
+  font-weight: 700;
+}
+.btn-closee {
+  width: 100%;
+  background-color: #f4f4f7;
+  border-radius: 40px;
+  height: 54px;
+}
+
+.btn-close {
+  background-color: #f4f4f7;
+  border-radius: 20px;
+}
+
+.modal-header {
+  padding: 26px 28px 20px 18px;
+}
+
+.modal-backdrop.show {
+  opacity: 0 !important;
+}
+
+//allocations css
+.card-counter {
+  margin: 5px;
+  padding: 9px 15px;
+  background-color: #f4f4f7;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: 0.3s linear all;
+}
+
+.card-counter i {
+  font-size: 5em;
+  opacity: 0.2;
+}
+
+.card-counter .count-numbers {
+  font-size: 32px;
+  display: block;
+  font-weight: 500;
+}
+
+.card-counter .count-name {
+  display: block;
+  font-size: 14px;
+  color: black;
+}
+
+.count-name {
+  font-weight: 600;
+}
+
+.sub {
+  vertical-align: sub;
+  font-size: 14px;
+}
+
+.leave-typ {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.apply-btn2 {
+  display: none;
+  margin-top: 38px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  color: #11101d;
+  border-radius: 30px;
+  background-color: #c083fa;
   
-  .btn-closee{
-    width: 100%;
-    background-color: #f4f4f7;
-    border-radius: 40px;
-    height: 60px;
-  }
-  
-  .btn-close{
-    background-color: #f4f4f7;
-      border-radius: 20px;
-  
-  }
-  
-  .modal-header{
-    padding: 26px;
-  }
-  
-  .modal-backdrop.show{
-    opacity: 0 !important;
-  }
-  
-  //allocations css
-  .card-counter{
-    margin: 5px;
-    padding: 9px 15px;
-    background-color: #f4f4f7;
-    height: auto;
-    border-radius: 20px;
-  }
-  
-  
-  
-   
-  
-  .card-counter i{
-    font-size: 5em;
-    opacity: 0.2;
-  }
-  
-  .card-counter .count-numbers{
-    font-size: 32px;
-    display: block;
-    font-weight: 500;
-  }
-  
-  .card-counter .count-name{
-    display: block;
-    font-size: 14px;
-    color: black;
-  }
-  
-  .count-name{
-    font-weight: 600;
-  }
-  
-  .sub{
-    vertical-align: sub;
-    font-size: 14px;
-  }
-  
-  .leave-typ{
-    font-weight: 400;
-    font-size: 14px;
-  
-  }
-  
-  .apply-btn2{
-    display: none;
-    margin-top: 38px;
-    font-size: 12px;
-    border: none;
-    color: #11101D;
-    border-radius: 30px;
-    background-color: #c083fa;
-  }
-  
-  // .apply-btn2:hover{
-  //   margin-top: 38px;
-  //   font-size: 12px;
-  //   border: 1px solid #c083fa;
-  //   color: #11101D;
-  //   border-radius: 30px;
-  //   background-color: white;
-  // }
-  
-  .hover-card:hover .apply-btn2{
+}
+
+.hover-card:hover .apply-btn2 {
   display: inline-block;
-  }
-  
-  .hover-card:hover{
-    border: 1px solid #c083fa;
-    background-color: #f6eefe;
-    border-radius: 20px;
-  
-  }
-  
-  #exampleModal{
-    backdrop-filter: blur(3px) !important;
-    background-color: transparent !important;
-  }
+}
+
+.hover-card:hover {
+  transition: 0.3s linear all;
+  border: 2px solid #c083fa;
+  background-color: #f6eefe;
+  border-radius: 10px;
+}
+
+#exampleModal {
+  backdrop-filter: blur(3px) !important;
+  background-color: transparent !important;
+}

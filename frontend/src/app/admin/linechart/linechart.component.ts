@@ -19,7 +19,7 @@ export class LinechartComponent implements AfterViewInit {
   
     const chart = Highcharts.chart('chart-line', {
       chart: {
-        type: 'line',
+        type: 'spline',
         backgroundColor: '#f4f4f7',
       },
       title: {
@@ -51,9 +51,13 @@ export class LinechartComponent implements AfterViewInit {
         {
           name: 'Amount',
           data,
-          color:'red'
+          color:'red',
+          marker: {
+            enabled: false, // Disable markers for data points
+          },
           
         },
+        
         
       ],
     } as any);
