@@ -6,12 +6,13 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 78px;
+  width: 92px;
   background: #f4f4f7;
-  padding: 29px 19px;
+  padding: 22px 33px 10px 10px;
   z-index: 99;
   transition: all 0.5s ease;
 }
+
 .sidebar.open {
   width: 250px;
 }
@@ -39,7 +40,7 @@
 .sidebar .logo-details #btn {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -9px;
   transform: translateY(-50%);
   font-size: 22px;
   transition: all 0.4s ease;
@@ -62,6 +63,7 @@
 .sidebar .nav-list {
   margin-top: 20px;
   height: 100%;
+  margin-left: -23px;
 }
 .sidebar li {
   position: relative;
@@ -185,7 +187,7 @@
 }
 .bottom-btn {
   margin-top: 331px;
-  margin-left: -36px;
+  margin-left: -4px;
 }
 
 .bottom-btn a {
@@ -193,12 +195,22 @@
 }
 
 .apy-btn {
+  transition: all 0.5s ease;
+  font-weight: 600;
+  border-radius: 9px;
+  background-color: #4ac3f7;
+  border: none;
+}
+
+.sidebar.open .apy-btn {
+  opacity: 1;
+  transition: all 0.5s ease;
   height: 60px;
-  width: 180px;
   font-weight: 600;
   border-radius: 30px;
   background-color: #4ac3f7;
   border: none;
+  padding: 0px 24px 0px 24px;
 }
 
 .home-section {
