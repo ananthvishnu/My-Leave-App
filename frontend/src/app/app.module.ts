@@ -29,6 +29,7 @@ import { SupervisorTableComponent } from './supervisor/supervisor-table/supervis
 import { SupervisorAvailabilityTableComponent } from './supervisor/supervisor-availability-table/supervisor-availability-table.component';
 import { ApproveLeaveModalComponent } from './supervisor/approve-leave-modal/approve-leave-modal.component';
 import { LeaveRequestApprovedModalComponent } from './supervisor/leave-request-approved-modal/leave-request-approved-modal.component';
+import { DatePickerComponent } from './components/date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { LeaveRequestApprovedModalComponent } from './supervisor/leave-request-a
     SupervisorTableComponent,
     SupervisorAvailabilityTableComponent,
     ApproveLeaveModalComponent,
-    LeaveRequestApprovedModalComponent
+    LeaveRequestApprovedModalComponent,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,

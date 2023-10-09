@@ -1,0 +1,27 @@
+<p> {{ selectedMonthYear }}</p>
+
+
+<ngb-datepicker #dp class="" (dateSelect)="onDateSelection($event)" [displayMonths]="1" [dayTemplate]="t" outsideDays="hidden">
+</ngb-datepicker>
+
+<p>Selected Month and Year: {{ selectedMonthYear }}</p>
+<ng-template #t let-date let-focused="focused">
+	<span
+		class="custom-day "
+		[class.focused]="focused"
+		[class.range]="isRange(date)"
+		[class.faded]="isHovered(date) || isInside(date)"
+		(mouseenter)="hoveredDate = date"
+		(mouseleave)="hoveredDate = null"
+	>
+		{{ date.day }}
+	</span>
+</ng-template>
+
+<hr/>
+
+
+  <div class="main-date">
+	<label class="date-pipe form-control">
+	From: {{ ngbDateToDate(fromDate) | date:'yyyy-MM-dd' }} </label>
+	<label class="date-pipe form-control">To: {{ ngbDateToDate(toDate) | date:'yyyy-MM-dd' }} </label>
