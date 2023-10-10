@@ -6,13 +6,42 @@
           <h5 class="modal-title" id="exampleModalLabel">Apply Leave</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <form class="modal-body form" action=""  (submit)="onSubmit()">
 
           <div class="row">
             <div class="col-md-5">
                 <h3>Select Day</h3>
-            <app-date-picker></app-date-picker>
-               
+                <p> {{ selectedMonthYear }}</p>
+
+
+                <ngb-datepicker #dp class="" (dateSelect)="onDateSelection($event)" [displayMonths]="1" [dayTemplate]="t" outsideDays="hidden">
+                </ngb-datepicker>
+                
+                <p>Selected Month and Year: {{ selectedMonthYear }}</p>
+                <ng-template #t let-date let-focused="focused">
+                  <span
+                    class="custom-day "
+                    [class.focused]="focused"
+                    [class.range]="isRange(date)"
+                    [class.faded]="isHovered(date) || isInside(date)"
+                    (mouseenter)="hoveredDate = date"
+                    (mouseleave)="hoveredDate = null"
+                  >
+                    {{ date.day }}
+                  </span>
+                </ng-template>
+                
+                <hr/>
+                
+                
+                  <div class="main-date">
+                  <label class="date-pipe form-control">
+                  From: {{ ngbDateToDate(fromDate) | date:'yyyy-MM-dd' }} </label>
+                  <label class="date-pipe form-control">To: {{ ngbDateToDate(toDate) | date:'yyyy-MM-dd' }} </label>
+                
+
+
+                  </div>
             </div>
             <div class="col-md-1">
               <div class="divider"></div>
@@ -23,35 +52,35 @@
             
                <h3>Select Duration</h3>
                <div class="row">
-                <form action="" class="form">
+                <div  class="form">
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="text" name="" id="" placeholder="Full day" class="form-control">
+                            <input type="text" placeholder="Full day" class="form-control" [ngClass]="{'fill':selectedDate}">
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" name="" id="" placeholder="half day" class="form-control">
+                            <input type="text" placeholder="half day" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <h3>comments</h3>
-                        <textarea name="" id="" cols="20" rows="5" class="form-control" placeholder="Add message"></textarea>
+                        <textarea  cols="20" rows="5" class="form-control" placeholder="Add message" id="reason"  [(ngModel)]="reason" name="reason"></textarea>
                     </div>
                     <div class="row">
                         <input type="text" name="" id="" class="form-control mt-3" placeholder="Add Attachment(optional)">
       
                     </div>
-                </form>
+                  </div>
                 
                 <div class="row">
                     <h3>Leave Summay</h3>
                     <div class="leave-data">
-                      Type : <span class="calender"><img src="../../../assets/images/R (1).png" alt="calender" width="16" height="16"> Casual</span>
+                      Type : <span class="calender"><img src="../../../assets/images/R (1).png" alt="calender" width="16" height="16"> {{getLeaveType()}}</span>
                     </div>
                     <div class="leave-data ">
-                  Duration :  <span class="calender" style=" margin-right: 20px;">1 Day</span> <span class="calender">9th jan 2023</span>
+                  Duration :  <span class="calender" style=" margin-right: 20px;">{{getNumberOfDays()}}</span> <span class="calender">{{ ngbDateToDate(fromDate) | date:'yyyy-MM-dd' }} </span><span class="calender">{{ ngbDateToDate(toDate) | date:'yyyy-MM-dd' }} </span>
                     </div>
                     <div class="leave-data ">
-                     Recipient :  <span class="calender"> <img src="../../../assets/images/png-transparent-graphic-design-icon-customer-service-avatar-icon-design-call-centre-yellow-smile-forehead.png" alt="calender" width="20" height="20"> Casual</span>
+                     Recipient :  <span class="calender"> <img src="../../../assets/images/png-transparent-graphic-design-icon-customer-service-avatar-icon-design-call-centre-yellow-smile-forehead.png" alt="calender" width="20" height="20">Leslie Alexander</span>
                     </div>
                 </div>
                </div>
@@ -61,14 +90,45 @@
       
           
            <div class="modal-footer">
-            <button type="button" class="btn btn-add" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal3"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <button type="submit" class="btn btn-add" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#exampleModal3"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
               <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
             </svg> Confirm and Apply</button>
 
           <button type="button" class="btn btn-closer" data-bs-dismiss="modal"><span class="btn-close btn-close1"></span> Cancel </button>
 
         </div>
-      </div>
+      </form>
+
+      <!-- <form (submit)="onSubmit()">
+        <div class="form-group">
+          <label for="category">Category:</label>
+          <input type="text" id="category" class="form-control" [(ngModel)]="category" name="category" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="fromDate">From Date:</label>
+          <input type="date" id="fromDate" class="form-control" [(ngModel)]="fromDate" name="fromDate" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="toDate">To Date:</label>
+          <input type="date" id="toDate" class="form-control" [(ngModel)]="toDate" name="toDate" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="duration">Duration:</label>
+          <input type="text" id="duration" class="form-control" [(ngModel)]="duration" name="duration">
+        </div>
+      
+        <div class="form-group">
+          <label for="reason">Reason:</label>
+          <textarea id="reason" class="form-control" [(ngModel)]="reason" name="reason" rows="4" required></textarea>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> -->
+      
+     
     </div>
 
 

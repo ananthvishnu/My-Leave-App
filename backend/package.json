@@ -4,7 +4,8 @@
   "description": "My Leave Management App",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon app.js",
+    "build": "npm i"
   },
   "author": "Vishnurathan",
   "license": "ISC",
