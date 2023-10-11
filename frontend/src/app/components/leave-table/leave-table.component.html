@@ -36,29 +36,29 @@
             <!-- Use *ngFor to loop through data based on current page and itemsPerPage -->
             <tr
               *ngFor="
-                let item of data.slice(
+                let leave of leaveRecords.slice(
                   (currentPage - 1) * itemsPerPage,
                   currentPage * itemsPerPage
                 )
               "
             >
-              <td>{{ item.duration }} <span class="status">{{item.dueday}}</span></td>
+              <td>{{ leave.fromDate | date }} {{leave.toDate | date}} <span class="status">{{leave.duration}} Day</span></td>
               <td class="text-center">
-                <span class="status"> <img src="{{ item.src }}" alt="img-leav" width="16" height="16" /> {{ item.type }}</span>
+                <span class="status"> <img [src]="{ medical: leave.category === 'medical'}" alt="img-leav" width="16" height="16" /> {{ leave.category }}</span>
               </td>
               <td class="text-end">
                 <span class="status">
                   <span
                     class="status-indicator"
                     [ngClass]="{
-                      pending: item.status === 'Pending',
-                      denied: item.status === 'Denied',
-                      approved: item.status === 'Approved'
+                      pending: leave.status === 'Pending',
+                      denied: leave.status === 'Denied',
+                      approved: leave.status === 'Approved'
                     }"
                   >
-                    {{ item.dot }}
+                    {{ leave.dot }}
                   </span>
-                  {{ item.status }}</span
+                  {{ leave.status }}</span
                 >
               </td>
             </tr>

@@ -29,9 +29,12 @@ export class LeaveApplymodelComponent implements OnInit {
   duration: any;
   reason!: string;
 
-  constructor(private leaveService: LeaveService, private datePipe: DatePipe) {}
+  constructor(private leaveService: LeaveService, private datePipe: DatePipe) {
+  }
 
-  ngOnInit() {}
+ngOnInit(): void {
+  
+}
 
   onSubmit() {
     

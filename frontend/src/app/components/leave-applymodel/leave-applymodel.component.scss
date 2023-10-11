@@ -181,6 +181,11 @@ ngb-datepicker {
   margin-bottom: 10px !important;
 }
 
+::ng-deep .ng-db-weekdays {
+  background-color: red !important;
+  color: greenyellow !important;
+}
+
 .main-date {
   display: flex;
   justify-content: space-between;
@@ -204,4 +209,98 @@ ngb-datepicker {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 16px 16px;
+}
+
+
+
+
+
+
+
+.custom-day {
+  text-align: center;
+  padding: 0.1rem 0.1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+}
+.custom-day.focused {
+  background-color: #FAF5FE;
+}
+.custom-day.range,
+.custom-day:hover {
+  background-color: #e1c6f8;
+  color: purple;
+  border-radius: 50%;
+}
+.custom-day.faded {
+  background-color: #FAF5FE;
+}
+
+
+.ngb-dp-weekday {
+font-size: 16px !important;
+font-weight: bold !important;
+color: red !important;
+margin-left: 20px !important;
+
+}
+
+  ngb-datepicker {
+      border: none;
+      border-radius: 10px;
+      display: grid;
+      // justify-content: space-around;
+     width: 100%;
+     background-color: #FAF5FE;
+      }
+
+      .ngb-dp-header {
+          color: purple;
+        }
+        
+        .ngb-dp-arrow-btn {
+          color: purple;
+        }
+
+
+        .ngb-dp-week.ngb-dp-weekdays {
+          display: flex;
+          justify-content: space-around;
+      }
+
+
+  /* Apply custom styles to the NgbDatepicker component */
+::ng-deep .ngb-dp-header {
+background-color: transparent !important;
+  color: white;
+  font-weight: bold;
+  // display: flex;
+  // justify-content: flex-end;
+}
+
+::ng-deep .ngb-dp-day, ::ng-deep .ngb-dp-month, ::ng-deep .ngb-dp-year, ::ng-deep .ngb-dp-weekday {
+  color: black !important;
+ margin-left: 15px;
+ margin-bottom: 5px;
+ font-style: normal !important;
+ font-weight: 500;
+ 
+}
+
+::ng-deep .ng-dp-week{
+  margin-bottom: 10px !important;
+}
+::ng-deep .ngb-dp-weekdays{
+ background-color: transparent !important;
+ border-bottom: 2px solid #C083FA !important;
+ 
+}
+
+::ng-deep  .ngb-dp-arrow-btn{
+  color: #C083FA !important;
+ 
+ 
 }
