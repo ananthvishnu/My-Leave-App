@@ -8,12 +8,13 @@ const UserRoute = require('./routes/userRoutes')
 
 const app = express();
 app.use(express.json());
-const allowedOrigins = ['http://localhost:4200'];
-app.use(cors({
-  origin: allowedOrigins
-}));
 
-//app.use(cors());
+// const allowedOrigins = ['http://localhost:4200'];
+// app.use(cors({
+//   origin: allowedOrigins
+// }));
+
+app.use(cors());
 
 
 app.use('/api',  UserRoute)
