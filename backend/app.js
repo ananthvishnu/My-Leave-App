@@ -13,6 +13,8 @@ app.use(cors({
   origin: allowedOrigins
 }));
 
+//app.use(cors());
+
 
 app.use('/api',  UserRoute)
 
